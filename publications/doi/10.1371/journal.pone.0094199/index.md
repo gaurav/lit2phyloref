@@ -25,8 +25,8 @@ Clades from *Crowl et al., 2016*
 
  1. Clade G
     - Description: Clade that includes *Campanual erinus* but excludes *Campanula drabifolia*
-    - Protege: has_Child some (excludes_lineage_to value crowl_et_al:Campanula_drabifolia) and has_Child value crowl_et_al:Campanula_erinus_AC107
-    - Expected: crowl_et_al:Node_47
+    - Protege: has_Child some (excludes_lineage_to value :Campanula_drabifolia) and has_Child value :Campanula_erinus_AC107
+    - Expected: :Node_47
 
 ## Tree 3. Plastid plus PPR ML tree (figure 3, supplementary figure S22)
 
