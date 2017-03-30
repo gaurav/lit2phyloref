@@ -71,7 +71,7 @@ while(<$input>) {
     }
 
     # Key-value pairs may need additional processing.
-    if(/^(\s*)-\s*([^:]+)\s*:\s*(.+)\s*$/) {
+    if(/^(\s*)-\s*([^:]+)\s*:\s*`?(.+?)`?\s*$/) {
         my $prefix_space = $1;
         my $key = $2;
         my $value = $3;
