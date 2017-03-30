@@ -27,7 +27,7 @@ sub execute_phyloref($$) {
             return ("timeout", "60 seconds");
         }
 
-        unless(/^<.*>$/) {
+        unless(/^<.*> .$/) {
             # Looks like some kind of error message.
             close($exec);
             return ("fail", $_);
@@ -177,6 +177,8 @@ sub getProtegeToManchester {
 
 sub getProtegeToFormattedManchester {
     my($protege, $prefix_space) = @_;
+
+    $protege = "\n$prefix_space  - $protege";
 
     $protege =~ s{(\b)has_Child(\b)}{$1\[has_Child\](http://purl.obolibrary.org/obo/CDAO_0000149)$2}g;
     $protege =~ s{(\b)has_Descendant(\b)}{$1\[has_Descendant\](http://purl.obolibrary.org/obo/CDAO_0000174)$2}g;
