@@ -9,24 +9,27 @@ Clades from *Crowl et al., 2016*
 
  1. Clade C1
     - Protege: `has_Child some (has_Descendant value :Campanula_latifolia and excludes_lineage_to value :Trachelium_caeruleum)`
-    - Manchester: [has_Child](http://purl.obolibrary.org/obo/CDAO_0000149) **some** ([has_Descendant](http://purl.obolibrary.org/obo/CDAO_0000174) **value** :Campanula_latifolia **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Trachelium_caeruleum)
-    - Matched: :Node_16
+    - Manchester: [has_Child](http://purl.obolibrary.org/obo/CDAO_0000149) **some** ([has_Descendant](http://purl.obolibrary.org/obo/CDAO_0000174) **value** :Campanula_latifolia 
+      - **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Trachelium_caeruleum)
+    - Error: <http://phyloinformatics.net/phylo/temporary#Node_16> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://phyloinformatics.net/phyloref.owl#Phyloreference> .
+
     - Expected: :Node_16
-    - Result: Successful
 
  2. Clade D
     - Protege: `has_Child some (has_Descendant value :Wahlenbergia_angustifolia and excludes_lineage_to value :Heterochaenia_ensifolia)`
-    - Manchester: [has_Child](http://purl.obolibrary.org/obo/CDAO_0000149) **some** ([has_Descendant](http://purl.obolibrary.org/obo/CDAO_0000174) **value** :Wahlenbergia_angustifolia **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Heterochaenia_ensifolia)
-    - Matched: :Node_4
+    - Manchester: [has_Child](http://purl.obolibrary.org/obo/CDAO_0000149) **some** ([has_Descendant](http://purl.obolibrary.org/obo/CDAO_0000174) **value** :Wahlenbergia_angustifolia 
+      - **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Heterochaenia_ensifolia)
+    - Error: <http://phyloinformatics.net/phylo/temporary#Node_4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://phyloinformatics.net/phyloref.owl#Phyloreference> .
+
     - Expected: :Node_4
-    - Result: Successful
 
  3. Clade G
     - Protege: `has_Child some (has_Descendant value :Campanula_erinus and excludes_lineage_to value :Campanula_drabifolia)`
-    - Manchester: [has_Child](http://purl.obolibrary.org/obo/CDAO_0000149) **some** ([has_Descendant](http://purl.obolibrary.org/obo/CDAO_0000174) **value** :Campanula_erinus **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Campanula_drabifolia)
-    - Matched: :Node_19
+    - Manchester: [has_Child](http://purl.obolibrary.org/obo/CDAO_0000149) **some** ([has_Descendant](http://purl.obolibrary.org/obo/CDAO_0000174) **value** :Campanula_erinus 
+      - **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Campanula_drabifolia)
+    - Error: <http://phyloinformatics.net/phylo/temporary#Node_19> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://phyloinformatics.net/phyloref.owl#Phyloreference> .
+
     - Expected: :Node_19
-    - Result: Successful
      
 ## Tree 2. PPR ML tree (figure 2, supplementary figure S21)
 
@@ -35,10 +38,11 @@ Clades from *Crowl et al., 2016*
  1. Clade G
     - Description: Clade that includes *Campanual erinus* but excludes *Campanula drabifolia*
     - Protege: `has_Child some (excludes_lineage_to value :Campanula_drabifolia) and has_Child value :Campanula_erinus_AC107`
-    - Manchester: [has_Child](http://purl.obolibrary.org/obo/CDAO_0000149) **some** ([excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Campanula_drabifolia) **and** [has_Child](http://purl.obolibrary.org/obo/CDAO_0000149) **value** :Campanula_erinus_AC107
-    - Matched: :Node_47
+    - Manchester: [has_Child](http://purl.obolibrary.org/obo/CDAO_0000149) **some** ([excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Campanula_drabifolia) 
+      - **and** [has_Child](http://purl.obolibrary.org/obo/CDAO_0000149) **value** :Campanula_erinus_AC107
+    - Error: <http://phyloinformatics.net/phylo/temporary#Node_47> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://phyloinformatics.net/phyloref.owl#Phyloreference> .
+
     - Expected: :Node_47
-    - Result: Successful
 
 ## Tree 3. Plastid plus PPR ML tree (figure 3, supplementary figure S22)
 
@@ -47,47 +51,57 @@ Clades from *Crowl et al., 2016*
  1. Clade A
     - Description: 
     - Protege: `has_Child some (has_Descendant value :Wahlenbergia_hederacea and excludes_lineage_to value :Campanula_latifolia) and has_Child some (has_Descendant value :Campanula_latifolia and excludes_lineage_to value :Wahlenbergia_hederacea)`
-    - Manchester: [has_Child](http://purl.obolibrary.org/obo/CDAO_0000149) **some** ([has_Descendant](http://purl.obolibrary.org/obo/CDAO_0000174) **value** :Wahlenbergia_hederacea **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Campanula_latifolia) **and** [has_Child](http://purl.obolibrary.org/obo/CDAO_0000149) **some** ([has_Descendant](http://purl.obolibrary.org/obo/CDAO_0000174) **value** :Campanula_latifolia **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Wahlenbergia_hederacea)
-    - Matched: :Node_4
+    - Manchester: [has_Child](http://purl.obolibrary.org/obo/CDAO_0000149) **some** ([has_Descendant](http://purl.obolibrary.org/obo/CDAO_0000174) **value** :Wahlenbergia_hederacea 
+      - **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Campanula_latifolia) 
+      - **and** [has_Child](http://purl.obolibrary.org/obo/CDAO_0000149) **some** ([has_Descendant](http://purl.obolibrary.org/obo/CDAO_0000174) **value** :Campanula_latifolia 
+      - **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Wahlenbergia_hederacea)
+    - Error: <http://phyloinformatics.net/phylo/temporary#Node_4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://phyloinformatics.net/phyloref.owl#Phyloreference> .
+
     - Expected: :Node_4
-    - Result: Successful
 
  2. Clade C1
     - Description:
     - Protege: `(has_Child some (has_Descendant value :Campanula_latifolia and excludes_lineage_to value :Trachelium_caeruleum))`
-    - Manchester: ([has_Child](http://purl.obolibrary.org/obo/CDAO_0000149) **some** ([has_Descendant](http://purl.obolibrary.org/obo/CDAO_0000174) **value** :Campanula_latifolia **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Trachelium_caeruleum))
-    - Matched: :Node_74
+    - Manchester: ([has_Child](http://purl.obolibrary.org/obo/CDAO_0000149) **some** ([has_Descendant](http://purl.obolibrary.org/obo/CDAO_0000174) **value** :Campanula_latifolia 
+      - **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Trachelium_caeruleum))
+    - Error: <http://phyloinformatics.net/phylo/temporary#Node_74> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://phyloinformatics.net/phyloref.owl#Phyloreference> .
+
     - Expected: :Node_74
-    - Result: Successful
 
  3. Clade D
     - Description: 
     - Protege: `has_Child some (has_Descendant value :Wahlenbergia_angustifolia and excludes_lineage_to value :Heterochaenia_ensifolia)`
-    - Manchester: [has_Child](http://purl.obolibrary.org/obo/CDAO_0000149) **some** ([has_Descendant](http://purl.obolibrary.org/obo/CDAO_0000174) **value** :Wahlenbergia_angustifolia **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Heterochaenia_ensifolia)
-    - Matched: :Node_119
+    - Manchester: [has_Child](http://purl.obolibrary.org/obo/CDAO_0000149) **some** ([has_Descendant](http://purl.obolibrary.org/obo/CDAO_0000174) **value** :Wahlenbergia_angustifolia 
+      - **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Heterochaenia_ensifolia)
+    - Error: <http://phyloinformatics.net/phylo/temporary#Node_119> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://phyloinformatics.net/phyloref.owl#Phyloreference> .
+
     - Expected: :Node_119
-    - Result: Successful
 
  4. Clade G
     - Description: 
     - Protege: `has_Child some (has_Descendant value :Campanula_erinus and excludes_lineage_to value :Campanula_drabifolia)`
-    - Manchester: [has_Child](http://purl.obolibrary.org/obo/CDAO_0000149) **some** ([has_Descendant](http://purl.obolibrary.org/obo/CDAO_0000174) **value** :Campanula_erinus **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Campanula_drabifolia)
-    - Matched: :Node_80
+    - Manchester: [has_Child](http://purl.obolibrary.org/obo/CDAO_0000149) **some** ([has_Descendant](http://purl.obolibrary.org/obo/CDAO_0000174) **value** :Campanula_erinus 
+      - **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Campanula_drabifolia)
+    - Error: <http://phyloinformatics.net/phylo/temporary#Node_80> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://phyloinformatics.net/phyloref.owl#Phyloreference> .
+
     - Expected: :Node_80
-    - Result: Successful
 
  5. Clade H
     - Description:
     - Protege: `has_Child some (has_Descendant value :Campanula_laciniata and excludes_lineage_to value :Campanula_pelviformis) and has_Child some (has_Descendant value :Campanula_pelviformis and excludes_lineage_to value :Campanula_laciniata)`
-    - Manchester: [has_Child](http://purl.obolibrary.org/obo/CDAO_0000149) **some** ([has_Descendant](http://purl.obolibrary.org/obo/CDAO_0000174) **value** :Campanula_laciniata **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Campanula_pelviformis) **and** [has_Child](http://purl.obolibrary.org/obo/CDAO_0000149) **some** ([has_Descendant](http://purl.obolibrary.org/obo/CDAO_0000174) **value** :Campanula_pelviformis **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Campanula_laciniata)
-    - Matched: :Node_108
+    - Manchester: [has_Child](http://purl.obolibrary.org/obo/CDAO_0000149) **some** ([has_Descendant](http://purl.obolibrary.org/obo/CDAO_0000174) **value** :Campanula_laciniata 
+      - **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Campanula_pelviformis) 
+      - **and** [has_Child](http://purl.obolibrary.org/obo/CDAO_0000149) **some** ([has_Descendant](http://purl.obolibrary.org/obo/CDAO_0000174) **value** :Campanula_pelviformis 
+      - **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Campanula_laciniata)
+    - Error: <http://phyloinformatics.net/phylo/temporary#Node_108> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://phyloinformatics.net/phyloref.owl#Phyloreference> .
+
     - Expected: :Node_108
-    - Result: Successful
 
  6. Clade H by branch
     - Description: 
     - Protege: `has_Child some (has_Descendant value :Campanula_laciniata and excludes_lineage_to value :Campanula_pelviformis)`
-    - Manchester: [has_Child](http://purl.obolibrary.org/obo/CDAO_0000149) **some** ([has_Descendant](http://purl.obolibrary.org/obo/CDAO_0000174) **value** :Campanula_laciniata **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Campanula_pelviformis)
-    - Matched: :Node_108
+    - Manchester: [has_Child](http://purl.obolibrary.org/obo/CDAO_0000149) **some** ([has_Descendant](http://purl.obolibrary.org/obo/CDAO_0000174) **value** :Campanula_laciniata 
+      - **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Campanula_pelviformis)
+    - Error: <http://phyloinformatics.net/phylo/temporary#Node_108> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://phyloinformatics.net/phyloref.owl#Phyloreference> .
+
     - Expected: :Node_108
-    - Result: Successful

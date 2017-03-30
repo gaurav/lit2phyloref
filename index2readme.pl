@@ -134,7 +134,7 @@ PHYLOREF_HEADER
                 say $fh "Class: :clade_calculated\n\tSubClassOf: phyloref:Phyloreference\n\tEquivalentTo: " .  getProtegeToManchester($value) . "\n\n";
                 close $fh;
 
-                say $output "$prefix_space- Manchester: " . getProtegeToFormattedManchester($value);
+                say $output "$prefix_space- Manchester: " . getProtegeToFormattedManchester($value, $prefix_space);
 
                 my $ontology_filename = $section_keyvalue{'owl_file'};
                 if(defined $ontology_filename) {
@@ -176,11 +176,14 @@ sub getProtegeToManchester {
 }
 
 sub getProtegeToFormattedManchester {
-    my($protege) = @_;
+    my($protege, $prefix_space) = @_;
 
     $protege =~ s{(\b)has_Child(\b)}{$1\[has_Child\](http://purl.obolibrary.org/obo/CDAO_0000149)$2}g;
     $protege =~ s{(\b)has_Descendant(\b)}{$1\[has_Descendant\](http://purl.obolibrary.org/obo/CDAO_0000174)$2}g;
     $protege =~ s{(\b)excludes_lineage_to(\b)}{$1\[excludes_lineage_to\](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61)$2}g;
+
+    # Wrap around on 'and's to make phyloreferences more readable.
+    $protege =~ s/(\b)(and)(\b)/$1\n$prefix_space  - $2$3/g;
 
     # Bold Manchester syntax.
     $protege =~ s/(\b)(value|some|and)(\b)/$1**$2**$3/g;

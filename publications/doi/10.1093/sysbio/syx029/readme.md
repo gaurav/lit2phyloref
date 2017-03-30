@@ -14,31 +14,58 @@ Clades from *Poe et al., 2017*
  2. *Dactyloa* Wagler 1830 [Castañeda and de Queiroz 2013] 
     - Definition: The most inclusive crown clade containing *Anolis punctatus* Daudin 1802 but not *A. bimaculatus* (Sparrman 1784), *A. cuvieri* Merrem 1820, *A. equestris* Merrem 1820, *A. occultus* Williams and Rivero 1965, and *A. sagrei* Duméril and Bibron 1837 (Castañeda and de Queiroz 2013).
     - Protege: `has_Descendant value :Anolis_punctatus and excludes_lineage_to value :Anolis_bimaculatus and excludes_lineage_to value :Anolis_cuvieri and excludes_lineage_to :Anolis_equestris and excludes_lineage_to value :Anolis_occultus and excludes_lineage_to value :Anolis_sagrei`
-    - Manchester: [has_Descendant](http://purl.obolibrary.org/obo/CDAO_0000174) **value** :Anolis_punctatus **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_bimaculatus **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_cuvieri **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) :Anolis_equestris **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_occultus **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_sagrei
+    - Manchester: [has_Descendant](http://purl.obolibrary.org/obo/CDAO_0000174) **value** :Anolis_punctatus 
+      - **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_bimaculatus 
+      - **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_cuvieri 
+      - **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) :Anolis_equestris 
+      - **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_occultus 
+      - **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_sagrei
     - Error: Name 'Anolis_equestris' not found.
 
  3. *Digilimbus* nobis, new clade name
     - Definition:  The most inclusive crown clade containing *Anolis carolinensis* Voigt 1832 but not *Anolis punctatus* Daudin 1802
     - Protege: `has_Descendant value :Anolis_carolinensis and excludes_lineage_to value :Anolis_punctatus`
-    - Manchester: [has_Descendant](http://purl.obolibrary.org/obo/CDAO_0000174) **value** :Anolis_carolinensis **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_punctatus
+    - Manchester: [has_Descendant](http://purl.obolibrary.org/obo/CDAO_0000174) **value** :Anolis_carolinensis 
+      - **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_punctatus
     - Error: timeout after 60 seconds.
 
  4. *Deiroptyx* Fitzinger 1843 [nobis], converted clade name
     - Definition:  The most inclusive crown clade containing *Anolis vermiculatus* Duméril and Bibron 1837 but not *A. auratus* Daudin 1802, *A. bimaculatus* (Sparrman 1784), *A. armouri* (Cochran 1934), *A. carolinensis* Voigt 1832, *A. cuvieri* Merrem 1820, *A. semilineatus* Cope 1864, and *A. punctatus Daudin 1802*.
     - Protege: `has_Descendant value :Anolis_vermiculatus and excludes_lineage_to value :Anolis_auratus and excludes_lineage_to value :Anolis_bimaculatus and excludes_lineage_to value :Anolis_armouri and excludes_lineage_to value :Anolis_carolinensis and excludes_lineage_to value :Anolis_cuvieri and excludes_lineage_to value :Anolis_semilineatus and excludes_lineage_to value :Anolis_punctatus`
-    - Manchester: [has_Descendant](http://purl.obolibrary.org/obo/CDAO_0000174) **value** :Anolis_vermiculatus **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_auratus **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_bimaculatus **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_armouri **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_carolinensis **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_cuvieri **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_semilineatus **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_punctatus
+    - Manchester: [has_Descendant](http://purl.obolibrary.org/obo/CDAO_0000174) **value** :Anolis_vermiculatus 
+      - **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_auratus 
+      - **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_bimaculatus 
+      - **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_armouri 
+      - **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_carolinensis 
+      - **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_cuvieri 
+      - **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_semilineatus 
+      - **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_punctatus
     - Error: timeout after 60 seconds.
 
  5. *Audantia* Cochran 1934 [nobis], converted clade name
     - Definition: The most inclusive crown clade containing *Anolis armouri* (Cochran 1934) but not *A. auratus* Daudin 1802, *A. bimaculatus* (Sparrman 1784), *A. carolinensis* Voigt 1832, *A. cuvieri* Merrem 1820, *A. semilineatus* Cope 1864, *A. vermiculatus* Duméril and Bibron 1837 and *A. punctatus* Daudin 1802.
     - Protege: `has_Descendant value :Anolis_armouri and excludes_lineage_to value :Anolis_auratus and excludes_lineage_to value :Anolis_bimaculatus and excludes_lineage_to value :Anolis_vermiculatus and excludes_lineage_to value :Anolis_carolinensis and excludes_lineage_to value :Anolis_cuvieri and excludes_lineage_to value :Anolis_semilineatus and excludes_lineage_to value :Anolis_punctatus`
-    - Manchester: [has_Descendant](http://purl.obolibrary.org/obo/CDAO_0000174) **value** :Anolis_armouri **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_auratus **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_bimaculatus **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_vermiculatus **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_carolinensis **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_cuvieri **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_semilineatus **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_punctatus
+    - Manchester: [has_Descendant](http://purl.obolibrary.org/obo/CDAO_0000174) **value** :Anolis_armouri 
+      - **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_auratus 
+      - **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_bimaculatus 
+      - **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_vermiculatus 
+      - **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_carolinensis 
+      - **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_cuvieri 
+      - **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_semilineatus 
+      - **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_punctatus
     - Error: timeout after 60 seconds.
 
  6. *Schmidtanolis* nobis, new clade name
     - Definition:  The most inclusive crown clade containing *Anolis semilineatus* Cope 1864 but not *A. auratus* Daudin 1802, *A. bimaculatus* Sparrman 1784, *A. armouri* Cochran 1934, *A. carolinensis* Voigt 1832, *A. cuvieri* Merrem 1820, *A. vermiculatus* Duméril and Bibron 1837, and *A. punctatus* Daudin 1802.
     - Protege: `has_Descendant value :Anolis_semilineatus and excludes_lineage_to value :Anolis_auratus and excludes_lineage_to value :Anolis_bimaculatus and excludes_lineage_to value :Anolis_vermiculatus and excludes_lineage_to value :Anolis_carolinensis and excludes_lineage_to value :Anolis_cuvieri and excludes_lineage_to value :Anolis_armouri and excludes_lineage_to value :Anolis_punctatus`
-    - Manchester: [has_Descendant](http://purl.obolibrary.org/obo/CDAO_0000174) **value** :Anolis_semilineatus **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_auratus **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_bimaculatus **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_vermiculatus **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_carolinensis **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_cuvieri **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_armouri **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_punctatus
+    - Manchester: [has_Descendant](http://purl.obolibrary.org/obo/CDAO_0000174) **value** :Anolis_semilineatus 
+      - **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_auratus 
+      - **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_bimaculatus 
+      - **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_vermiculatus 
+      - **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_carolinensis 
+      - **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_cuvieri 
+      - **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_armouri 
+      - **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_punctatus
     - Error: timeout after 60 seconds.
 
  7. *Chamaelinorops* Schmidt 1919 [nobis], converted clade name
@@ -47,7 +74,14 @@ Clades from *Poe et al., 2017*
  8. *Xiphosurus* Fitzinger 1826 [nobis], converted clade name
     - Definition:  The most inclusive crown clade containing *Anolis cuvieri* Merrem 1820 but not *A. auratus* Daudin 1802, *A. bimaculatus* (Sparrman 1784), *A. armouri* (Cochran 1934), *A. carolinensis* Voigt 1832, *Anolis semilineatus* Cope 1864, *A. vermiculatus* Duméril and Bibron 1837, and *A. punctatus* Daudin 1802.
     - Protege: `has_Descendant value :Anolis_cuvieri and excludes_lineage_to value :Anolis_auratus and excludes_lineage_to value :Anolis_bimaculatus and excludes_lineage_to value :Anolis_vermiculatus and excludes_lineage_to value :Anolis_carolinensis and excludes_lineage_to value :Anolis_semilineatus and excludes_lineage_to value :Anolis_armouri and excludes_lineage_to value :Anolis_punctatus`
-    - Manchester: [has_Descendant](http://purl.obolibrary.org/obo/CDAO_0000174) **value** :Anolis_cuvieri **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_auratus **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_bimaculatus **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_vermiculatus **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_carolinensis **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_semilineatus **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_armouri **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_punctatus
+    - Manchester: [has_Descendant](http://purl.obolibrary.org/obo/CDAO_0000174) **value** :Anolis_cuvieri 
+      - **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_auratus 
+      - **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_bimaculatus 
+      - **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_vermiculatus 
+      - **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_carolinensis 
+      - **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_semilineatus 
+      - **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_armouri 
+      - **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_punctatus
     - Error: timeout after 60 seconds.
 
  9. *Chamaeleolis* Cocteau 1838 [nobis], converted clade name
@@ -56,7 +90,14 @@ Clades from *Poe et al., 2017*
  10. *Ctenocercus* Fitzinger 1843 [nobis], converted clade name
     - Definition: The most inclusive crown clade containing *Anolis carolinensis* Voigt 1832 but not *A. auratus* Daudin 1802, *A. bimaculatus* (Sparrman 1784), *A. armouri* (Cochran 1934), *A. cuvieri* Merrem 1820, *A. semilineatus* Cope 1864, *A. vermiculatus* Duméril and Bibron 1837 and *A. punctatus* Daudin 1802.
     - Protege: `has_Descendant value :Anolis_carolinensis and excludes_lineage_to value :Anolis_auratus and excludes_lineage_to value :Anolis_bimaculatus and excludes_lineage_to value :Anolis_vermiculatus and excludes_lineage_to value :Anolis_cuvieri and excludes_lineage_to value :Anolis_semilineatus and excludes_lineage_to value :Anolis_armouri and excludes_lineage_to value :Anolis_punctatus`
-    - Manchester: [has_Descendant](http://purl.obolibrary.org/obo/CDAO_0000174) **value** :Anolis_carolinensis **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_auratus **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_bimaculatus **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_vermiculatus **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_cuvieri **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_semilineatus **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_armouri **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_punctatus
+    - Manchester: [has_Descendant](http://purl.obolibrary.org/obo/CDAO_0000174) **value** :Anolis_carolinensis 
+      - **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_auratus 
+      - **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_bimaculatus 
+      - **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_vermiculatus 
+      - **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_cuvieri 
+      - **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_semilineatus 
+      - **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_armouri 
+      - **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_punctatus
     - Error: timeout after 60 seconds.
 
  11. *Ctenonotus* Fitzinger 1843 [nobis], converted clade name
@@ -68,17 +109,23 @@ Clades from *Poe et al., 2017*
  13. *Trachypilus* Fitzinger 1843 [nobis], converted clade name
     - Definition: The most inclusive crown clade containing *Anolis sagrei* Duméril and Bibron 1837 but not *A. valencienni* Duméril and Bibron 1837 and *A. chrysolepis* Duméril and Bibron 1837.
     - Protege: has_Descendant value :Anolis_sagrei and excludes_lineage_to value :Anolis_valencienni and excludes_lineage_to value :Anolis_chrysolepis
-    - Manchester: [has_Descendant](http://purl.obolibrary.org/obo/CDAO_0000174) **value** :Anolis_sagrei **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_valencienni **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_chrysolepis
+    - Manchester: [has_Descendant](http://purl.obolibrary.org/obo/CDAO_0000174) **value** :Anolis_sagrei 
+      - **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_valencienni 
+      - **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_chrysolepis
     - Error: timeout after 60 seconds.
 
  14. *Placopsis* Gosse 1850 [nobis], converted clade name
     - Definition: The most inclusive crown clade containing *Anolis valencienni* Duméril and Bibron 1837 but not *A. sagrei* Duméril and Bibron 1837 and *A. chrysolepis* Duméril and Bibron 1837.
     - Protege: has_Descendant value :Anolis_valencienni and excludes_lineage_to value :Anolis_sagrei and excludes_lineage_to value :Anolis_chrysolepis
-    - Manchester: [has_Descendant](http://purl.obolibrary.org/obo/CDAO_0000174) **value** :Anolis_valencienni **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_sagrei **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_chrysolepis
+    - Manchester: [has_Descendant](http://purl.obolibrary.org/obo/CDAO_0000174) **value** :Anolis_valencienni 
+      - **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_sagrei 
+      - **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_chrysolepis
     - Error: timeout after 60 seconds.
 
  15. *Draconura* Wagler 1830 [nobis], converted clade name
     - Definition:  The most inclusive crown clade containing Anolis chrysolepis Duméril and Bibron 1837 but not A. sagrei Duméril and Bibron 1837 and A. valencienni Duméril and Bibron 1837
     - Protege: has_Descendant value :Anolis_chrysolepis and excludes_lineage_to value :Anolis_sagrei and excludes_lineage_to value :Anolis_valencienni
-    - Manchester: [has_Descendant](http://purl.obolibrary.org/obo/CDAO_0000174) **value** :Anolis_chrysolepis **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_sagrei **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_valencienni
+    - Manchester: [has_Descendant](http://purl.obolibrary.org/obo/CDAO_0000174) **value** :Anolis_chrysolepis 
+      - **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_sagrei 
+      - **and** [excludes_lineage_to](https://github.com/hlapp/phyloref/blob/c2a1b813690e3afc78c2abdacab216e368b5c83e/phyloref.owl#L61) **value** :Anolis_valencienni
     - Error: timeout after 60 seconds.
