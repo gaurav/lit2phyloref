@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr/bin/env perl
 
 use v5.020;
 
@@ -15,8 +15,24 @@ sub execute_phyloref($$) {
 
     # Eventually, we'd like robot (https://github.com/ontodev/robot/) 
     # to do this. But for now ...
-    open(my $exec, "-|", "java -jar ~/code/phyloref/phylo2owl/tests/reasoner/target/reasoner-0.1-SNAPSHOT.jar " . $filename_ontology . " " . $filename_phyloref) or die "Could not execute reasoner: $!";
+    open(my $exec, "-|", "timelimit -t60 java -mx6G -jar ~/code/phyloref/phylo2owl/tests/reasoner/target/reasoner-0.1-SNAPSHOT.jar " . $filename_ontology . " " . $filename_phyloref . " 2>&1") or die "Could not execute reasoner: $!";
     while(<$exec>) {
+        if(/ParserException: Encountered :(\w+) /) {
+            close($exec);
+            return ("name_mismatch", $1);
+        }
+
+        if(/timelimit: sending warning signal 15/) {
+            close($exec);
+            return ("timeout", "60 seconds");
+        }
+
+        unless(/^<.*>$/) {
+            # Looks like some kind of error message.
+            close($exec);
+            return ("fail", $_);
+        }
+
         next unless /clade_calculated/;
         chomp;
 
@@ -34,7 +50,11 @@ sub execute_phyloref($$) {
 
     close($exec);
 
-    return @results;
+    if(0 == scalar @results) {
+        return ("fail", "No matched nodes");
+    } 
+
+    return ("success", @results);
 }
 
 # Input and output file names.
@@ -78,11 +98,11 @@ while(<$input>) {
 
         # say STDERR " - $section/$subsection/$key:$value."; 
         given($key) {
-            when(/OWL/i) {
+            when(/^OWL$/i) {
                 $section_keyvalue{'owl_file'} = $value; 
             }
 
-            when(/Expected/i) {
+            when(/^Expected$/i) {
                 if(exists $subsection_keyvalue{'matched'}) {
                     my $result = "**FAILED**";
 
@@ -92,7 +112,7 @@ while(<$input>) {
                 }
             }
 
-            when(/Protege/i) {
+            when(/^Protege$/i) {
                 # convert to Manchester syntax and run.
                 use File::Temp;
 
@@ -118,12 +138,23 @@ PHYLOREF_HEADER
 
                 my $ontology_filename = $section_keyvalue{'owl_file'};
                 if(defined $ontology_filename) {
-                    say STDERR "Executing phyloreferences from '$filename' to ontology '$ontology_filename'.";
+                    say STDERR "\n - Executing phyloreference '$value' from '$filename' to ontology '$ontology_filename'.";
                     my @results = execute_phyloref($ontology_filename, $filename);
+                    my $result = shift @results;
 
-                    say $output "$prefix_space- Matched: " . join(', ', @results);
+                    if($result eq 'success') {
+                        say $output "$prefix_space- Matched: " . join(', ', @results);
 
-                    $subsection_keyvalue{'matched'} = join(', ', @results);
+                        $subsection_keyvalue{'matched'} = join(', ', @results);
+                    } elsif($result eq 'timeout') {
+                        my $timeout_time = shift @results;
+                        say STDERR "    - Timeout after $timeout_time";
+                        say $output "$prefix_space- Error: timeout after $timeout_time.";
+                    } elsif($result eq 'name_mismatch') {
+                        say $output "$prefix_space- Error: Name '" . join(', ', @results) . "' not found.";
+                    } else {
+                        say $output "$prefix_space- Error: " . join(', ', @results);
+                    }
                 }
             }
         }
