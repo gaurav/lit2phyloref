@@ -5,6 +5,8 @@ use v5.020;
 use strict;
 use warnings;
 
+our $TIMEOUT_SECS = 12_000;
+
 # Dummy prototype. If this works, we'll rewrite it in something
 # fancier, probably Java or Scala.
 
@@ -15,7 +17,7 @@ sub execute_phyloref($$) {
 
     # Eventually, we'd like robot (https://github.com/ontodev/robot/) 
     # to do this. But for now ...
-    open(my $exec, "-|", "timelimit -t60 java -mx6G -jar ~/code/phyloref/phylo2owl/tests/reasoner/target/reasoner-0.1-SNAPSHOT.jar " . $filename_ontology . " " . $filename_phyloref . " 2>&1") or die "Could not execute reasoner: $!";
+    open(my $exec, "-|", "timelimit -t$TIMEOUT_SECS java -mx6G -jar ~/code/phyloref/phylo2owl/tests/reasoner/target/reasoner-0.1-SNAPSHOT.jar " . $filename_ontology . " " . $filename_phyloref . " 2>&1") or die "Could not execute reasoner: $!";
     while(<$exec>) {
         if(/ParserException: Encountered :(\w+) /) {
             close($exec);
@@ -24,7 +26,7 @@ sub execute_phyloref($$) {
 
         if(/timelimit: sending warning signal 15/) {
             close($exec);
-            return ("timeout", "60 seconds");
+            return ("timeout", "$TIMEOUT_SECS seconds");
         }
 
         unless(/^<.*> .$/) {
