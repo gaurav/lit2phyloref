@@ -1,0 +1,79 @@
+{
+    "@context": {
+        "@base": "http://example.org/TBD#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "ot": "http://purl.org/opentree/nexson#",
+        "cdao": "http://purl.obolibrary.org/obo/CDAO_",
+        "rdfs": "https://www.w3.org/2000/01/rdf-schema#",
+        "tbd": "http://example.org/TBD#",
+        
+        "curator": {
+            "@id": "ot:curatorName",
+            "@type": "xsd:string"
+        },
+        "comments": {
+            "@id": "ot:comments",
+            "@type": "xsd:string"
+        },
+
+        "citation": "ot:studyPublicationReference",
+        "url": {
+            "@id": "ot:studyPublication",
+            "@type": "@id"
+        },
+        "year": {
+            "@id": "ot:studyYear",
+            "@type": "xsd:integer"
+        },
+
+        "trees": {
+            "@id": "tbd:trees",
+            "@container": "@list",
+            "@type": "tbd:Tree"
+        },
+
+        "otus": {
+            "@id": "tbd:otus",
+            "@container": "@set",
+            "@type": "cdao:0000138"
+        },
+
+        "internalNodes": {
+            "@id": "tbd:internalNodes",
+            "@container": "@set",
+            "@type": "cdao:0000140"
+        },
+
+        "newick": {
+            "@id": "tbd:asNewickString",
+            "@type": "xsd:string"
+        },
+
+        "cladeType": {
+            "@id": "tbd:cladeType",
+            "@type": "@id"
+        },
+
+        "cladeDefinition": {
+            "@id": "tbd:cladeDefinition",
+            "@type": "xsd:string"
+        },
+
+        "internalSpecifiers": {
+            "@id": "tbd:internalSpecifers",
+            "@container": "@set",
+            "@type": "cdao:0000138"
+        },
+
+        "label": "rdfs:label",
+        "binomialName": "tbd:binomialName",
+        "NCBITaxonId": "tbd:NCBITaxonId",
+        "uBioNameBankId": "tbd:uBioNameBankId",
+        "GenBankAccession": "tbd:GenBankAccession",
+        "voucheredSpecimen": "tbd:voucheredSpecimen",
+        "collectionDetails": "tbd:collectionDetails",
+
+        "originalFile": "tbd:originalFile",
+        "phyloref:Publication": "tbd:Publication"
+    }
+}
