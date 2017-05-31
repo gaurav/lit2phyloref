@@ -12,7 +12,7 @@
             "@type": "xsd:string"
         },
         "comments": {
-            "@id": "ot:comments",
+            "@id": "ot:comment",
             "@type": "xsd:string"
         },
 
@@ -26,32 +26,24 @@
             "@type": "xsd:integer"
         },
 
-        "trees": {
-            "@id": "tbd:trees",
-            "@container": "@list",
-            "@type": "tbd:Tree"
+        "phylogenies": {
+            "@id": "tbd:phylogenies",
+            "@container": "@list"
         },
 
         "otus": {
             "@id": "tbd:otus",
-            "@container": "@set",
-            "@type": "cdao:0000138"
+            "@container": "@set"
         },
 
-        "internalNodes": {
-            "@id": "tbd:internalNodes",
-            "@container": "@set",
-            "@type": "cdao:0000140"
+        "phylorefs": {
+            "@id": "tbd:phylorefs",
+            "@container": "@set"
         },
 
         "newick": {
             "@id": "tbd:asNewickString",
             "@type": "xsd:string"
-        },
-
-        "cladeType": {
-            "@id": "tbd:cladeType",
-            "@type": "@id"
         },
 
         "cladeDefinition": {
@@ -60,9 +52,13 @@
         },
 
         "internalSpecifiers": {
-            "@id": "tbd:internalSpecifers",
-            "@container": "@set",
-            "@type": "cdao:0000138"
+            "@id": "tbd:internalSpecifiers",
+            "@container": "@set"
+        },
+
+        "externalSpecifiers": {
+            "@id": "tbd:externalSpecifiers",
+            "@container": "@set"
         },
 
         "label": "rdfs:label",
@@ -73,7 +69,6 @@
         "voucheredSpecimen": "tbd:voucheredSpecimen",
         "collectionDetails": "tbd:collectionDetails",
 
-        "originalFile": "tbd:originalFile",
-        "phyloref:Publication": "tbd:Publication"
+        "originalFile": "tbd:originalFile"
     }
 }
